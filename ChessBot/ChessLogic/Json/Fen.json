@@ -1,12 +1,17 @@
 {
   "Fens": [
-    "8/1rqbbkrp/RPP2P2/2PP1PPN/4K3/8/5N2/1R6 b - -",
-    "b6r/R7/2k5/8/PP2p1Pp/2p1p3/4n3/1K6 b - -",
-    "N2rkb1r/2qppppp/n4n2/P3PP2/8/7P/6P1/RNBQKBNR w - -",
-    "N2qkb1r/1bpppppp/n4n2/2P5/8/8/3PPPPP/RNBQKBNR b - -",
-    "1B6/PbP3rk/8/2P5/7P/K7/5N2/7R w - -",
-    "rn1q1bnr/3k4/3pb3/6p1/1K1P2Pp/1q1pBP1N/7P/r4B2 w - -",
-    "k7/7R/8/8/8/8/5K1b/1b4r1 w - -",
-    "b5N1/5r1k/Ppp1PP1b/5N2/6R1/7K/3R4/8 b - -"
+    "rnb2r2/1k5p/1Q6/p7/Ppp1P3/5p1p/3K1Bp1/4R1R1 b - -",
+    "rnbqkbn1/7r/8/4Np1p/pBP2P1P/Pp4pR/1PN3P1/R2QKB2 b - -",
+    "2Q1NR2/2N3q1/1P4k1/3p2P1/1P3P2/5K2/8/1B4BQ b - -",
+    "r7/1k6/3n4/1B3p2/4pP2/4P2b/Q7/1K6 w - -",
+    "r1q3n1/P2k4/3r4/4n2p/q6P/4K3/r7/8 w - -",
+    "1rbqkbnr/pppppppp/n7/8/7P/4PP2/PPPP2P1/RNBQKBNR b - -",
+    "2bqkbn1/p7/1N3p2/4N2r/5K2/6Pp/4P2n/7r w - -",
+    "rN1qkbnr/1b3pp1/1p2p3/3p3p/P1p5/2P5/3PPPPP/RNBQKBNR b KQkq -",
+    "1nNq3r/6k1/1N1q3b/7n/3p4/6b1/R4P2/1rB1K3 w - -",
+    "4kbr1/1r1bpppp/nN1p1n2/5P2/8/8/2P1P1PP/RNBQKBNR b - -",
+    "Nn1q2n1/p6r/2p2p2/2P2k1p/3pp3/6p1/3PP1PP/RNBQKBNR w - -",
+    "2N1kbr1/1b1qpppp/nN3n2/8/4P3/8/5PPP/RNBQKBNR w - -",
+    "1rbqkb1r/pppppppp/n4n2/8/1P1K1P1Q/B1N1P3/P1PP1NPP/1R3B1R b - -"
   ]
 }

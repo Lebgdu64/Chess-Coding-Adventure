@@ -19,5 +19,19 @@
             "FromPos": "d2",
             "ToPos": "d4"
         }
+    },
+    {
+        "Position": "r1bqkbnr/pppp1ppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq -",
+        "BestMove": {
+            "FromPos": "f3",
+            "ToPos": "d4"
+        }
+    },
+    {
+        "Position": "r1bqkb1r/pppp1ppp/2n2n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq -",
+        "BestMove": {
+            "FromPos": "d4",
+            "ToPos": "c6"
+        }
     }
 ]

@@ -10,11 +10,13 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+
 namespace ChessLogic
 {
     [Serializable]
     public class GameState
     {
+        public bool bookCheck = false;
         public event EventHandler onPlayerMoved;
         public Board Board { get; }
         public Player CurrentPlayer { get; private set; }
@@ -150,11 +152,12 @@ namespace ChessLogic
             }
             else
             {
+                
                 UpdateStateString();
                 Dictionary<string, OpeningBookEntry> currentOpeningBook =
                     player == Player.White ? _openingBookWhite : _openingBookBlack;
 
-                if (currentOpeningBook.TryGetValue(stateString, out OpeningBookEntry bookEntry) && bookEntry.BestMove != null)
+                if (currentOpeningBook.TryGetValue(stateString, out OpeningBookEntry bookEntry) && bookEntry.BestMove != null && bookCheck)
                 {
                     // Access the FromPos and ToPos properties within BestMove
                     Position fromPos = FromString(bookEntry.BestMove.FromPos);

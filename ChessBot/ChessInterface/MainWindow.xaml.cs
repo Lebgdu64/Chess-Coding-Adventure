@@ -27,7 +27,7 @@ namespace ChessInterface
         private readonly Image[,] pieceImages = new Image[8, 8];
         private readonly Rectangle[,] highlights = new Rectangle[8, 8];
         private readonly Dictionary<Position, Move> moveCache = new Dictionary<Position, Move>();
-        
+        public bool _checkBox = false;
         
         private ChessLogic.GameState gameState;
         private Position selectedPos = null;
@@ -41,6 +41,7 @@ namespace ChessInterface
             evo = new(100, 100);
             HumanVSHuman();
         }
+
 
 
         private void InitializeBoard()
@@ -186,6 +187,7 @@ namespace ChessInterface
 
         public bool Restart()
         {
+            
             HideHighlights();
             moveCache.Clear();
             MenuContainer.Content = null;
@@ -232,7 +234,7 @@ namespace ChessInterface
             gameState = new ChessLogic.GameState(Player.White, Board.Initial(), bot, blackOrWhite);
             DrawBoard(gameState.Board);
             gameState.stateString = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq -";
-
+            gameState.bookCheck = _checkBox;
         }
         private void o(object sender, KeyEventArgs e)
         {
@@ -306,6 +308,15 @@ namespace ChessInterface
                 DrawBoard(gameState.Board);
             }
         }
+        public void BookActivate()
+        {
+            _checkBox = true;
+        }
+
+        public void BookDesactivate()
+        {
+            _checkBox = false;
+        }
 
     }
 
@@ -349,5 +360,7 @@ namespace ChessInterface
             var json = File.ReadAllText(path);
             return JsonSerializer.Deserialize<T>(json);
         }
+
+
     }
 }

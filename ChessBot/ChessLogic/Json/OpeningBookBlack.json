@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "Position": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq -",
     "BestMove": {
@@ -18,6 +18,20 @@
     "BestMove": {
       "FromPos": "e5",
       "ToPos": "d4"
+    }
+  },
+  {
+    "Position": "r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq -",
+    "BestMove": {
+      "FromPos": "g8",
+      "ToPos": "f6"
+    }
+  },
+  {
+    "Position": "r1bqkb1r/pppp1ppp/2N2n2/8/4P3/8/PPP2PPP/RNBQKB1R b KQkq -",
+    "BestMove": {
+      "FromPos": "b7",
+      "ToPos": "c6"
     }
   }
 ]
